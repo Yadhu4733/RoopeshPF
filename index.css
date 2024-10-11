@@ -38,64 +38,136 @@
   letter-spacing: 3px;
 }
 
-.bg-image{
-    background-image: url('./asset/IMG_3060.JPG');
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    position: relative;
-    height: 100vh;
+.bg-image {
+  background-image: url('./asset/IMG_3060.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  background-position: center; /* Default positioning for larger screens */
 }
-.bg-image::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 15px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(200, 197, 197) 100%);
-    backdrop-filter: blur(10px); 
+
+.bg-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(200, 197, 197) 100%);
+  backdrop-filter: blur(10px); 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bg-image {
+      background-position: right; /* Show the right part of the image on small screens */
+  }
 }
 
 
 .p12{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .overlay-text {
-    position: absolute; 
-    top: 50%;
-    left: 40%; 
-    transform: translate(-50%, -50%); 
-    text-align: center;
-    color: white; 
+  position: absolute; 
+  top: 50%;
+  left: 40%; /* Centering the text */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white; 
+  animation: fadeInSlide 15s ease-in-out infinite; /* Adding animation */
 }
 
+/* Keyframes for the fade and slide animation */
 
 
 .overlay-text p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-  .merriweather-bold {
-    font-family: "Merriweather", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 45px;
+
+
+
+
+.overlay-text {
+  position: absolute; 
+  top: 50%;
+  left: 40%; /* Centering the overlay text */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: white; 
+}
+
+.overlay-text p {
+  font-size: 1.5rem;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 45px;
+}
+
+.texts {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInMoveUp 3s ease forwards; /* Initial animation */
+  animation-iteration-count: infinite; /* Loop the animation */
+  animation-direction: alternate; /* Reverse on alternate iterations */
+}
+
+@keyframes fadeInMoveUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+}
+
+.animation-container {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .overlay-text p {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
   }
 
-  .hmicn{
+  .merriweather-bold {
+      font-size: 36px; /* Adjust font size for smaller screens */
+  }
+
+  .texts {
+      font-size: 1.5rem; /* Adjust text size on small screens */
+  }
+}
+
+
+
+
+
+
+  .hmicn {
     position: absolute;
     top: 55%;
-    
-  }
+}
 
-
-
-
-  .icon-container {
+.icon-container {
     width: 200px; 
-    height: 50px;
+    height: 50px; 
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -105,7 +177,6 @@
     background-size: 200% 100%; 
     background-position: -100% 0; 
 }
-
 
 .youtube-container {
     background-image: linear-gradient(to right, #FF0000 50%, transparent 50%); 
@@ -122,7 +193,6 @@
 .whatsapp-container {
     background-image: linear-gradient(to right, #0A66C2 50%, transparent 50%); 
 }
-
 
 .icon {
     color: white;
@@ -144,7 +214,6 @@
     transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-
 .icon-container:hover .icon {
     left: 10px; 
 }
@@ -158,10 +227,7 @@
     background-position: 0 0; 
 }
 
-
-
-.animation-container {
-    
+/* .animation-container {
     font-size: 2em;
     font-weight: bold;
     color: white;
@@ -171,7 +237,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInMoveUp 3s ease forwards;
-}
+} */
 
 @keyframes fadeInMoveUp {
     0% {
@@ -183,6 +249,14 @@
         transform: translateY(0);
     }
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .icon-container {
+        display: none; /* Hide the icons on small screens */
+    }
+}
+
 
 
 
@@ -471,7 +545,7 @@
 
   @media (min-width: 1200px) {
     .abt4 {
-      font-size: 23px;       
+      font-size: 28px;       
       line-height: 1.8;       
  
       padding: 15px;         
@@ -505,7 +579,7 @@
 
 
 /* about02 */
-
+/* 
 .hover-col {
   display: flex;
   justify-content: center;
@@ -564,6 +638,8 @@
 }
 
 
+
+
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -572,7 +648,7 @@
 .asw{
   
   left: 45%;
-  top: 3%;
+  
   text-align: center;
   position: absolute;
   text-decoration: none;
@@ -655,7 +731,140 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* ABOUT */
+/* .km-body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: url('./asset/IMG_3062.JPG') no-repeat center center scroll;
+  background-size: cover;
 }
+ */
+
+
+
+
+
+.km-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+  z-index: -1; /* Keeps the overlay behind all content */
+}
+
+/* Ensure the rest of the content is above the background */
+.km1-fluid {
+  position: relative; /* Content is positioned above the background */
+  z-index: 1;
+}
+
+.km1, .km2, .km3, .km4, .km5, .km6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  height: 50vh; 
+  border: 4px solid transparent; 
+  position: relative;
+  overflow: hidden;
+}
+
+.km1:before, .km1:after, .km2:before, .km2:after,
+.km3:before, .km3:after, .km4:before, .km4:after,
+.km5:before, .km5:after, .km6:before, .km6:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: all 0.5s ease;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.km1:hover:before, .km1:hover:after, .km2:hover:before, .km2:hover:after,
+.km3:hover:before, .km3:hover:after, .km4:hover:before, .km4:hover:after,
+.km5:hover:before, .km5:hover:after, .km6:hover:before, .km6:hover:after {
+  opacity: 1;
+  animation: none; 
+}
+
+.km-content {
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  background-color: #ff4e50, #f9d423;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+@media (min-width: 992px) {
+  .km1:hover, .km2:hover, .km3:hover, .km4:hover, .km5:hover, .km6:hover {
+      transform: scale(1.1);
+  }
+
+  .km-content:hover {
+      transform: scale(1.05);
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.km-link {
+  left: 45%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.km-title {
+  margin-top: 5%;
+  background-color: #fdfff7;
+}
+.km-description {
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -791,87 +1000,130 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
   /* SKILLS */
-
+  .skills-container {
+    display: flex;
+    flex-direction: column; /* Stack the heading and skills vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgb(226, 226, 226), white);
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .sk1 {
+    text-align: center;
+    margin-bottom: 50px; /* Add margin to separate heading from skills */
+    font-size: 1.5rem; /* Increase font size for visibility */
+    font-weight: bold; /* Make the heading bold */
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap; /* Allows skills to wrap to the next line */
+    justify-content: center; /* Center skills horizontally */
+    align-items: center; /* Center skills vertically */
+    gap: 25px; /* Add gap for spacing between skills */
+  }
+  
+  .skill {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Changed to relative for responsiveness */
+  }
+  
+  .center-skill {
+    background-color: #ffcc00;
+  }
+  
+  .skill:hover {
+    transform: scale(1.2);
+  }
+  
+  .skill i {
+    font-size: 2rem;
+  }
+  
+  .skill p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .skill i {
+    animation: bounce 2s infinite;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 480px) { /* Styles for very small devices */
     .skills-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        position: relative;
-        background: linear-gradient(rgb(226, 226, 226),white ) ;
-      }
+      height: auto; /* Allow height to adjust based on content */
+    }
   
- 
-      .skill {
-        width: 120px;
-        height: 120px;
-        background-color: white;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-        position: absolute;
-      }
- 
-      .center-skill {
-        background-color: #ffcc00; 
-      }
+    .sk1 {
+      font-size: 1.5rem; /* Larger font size for 'SKILLS' title on small screens */
+    }
   
-    
-      .top-skill {
-        top: 120px; 
-      }
-      .bottom-skill {
-        bottom: 120px; 
-      }
-      .left-skill {
-        left: 350px; 
-      }
-      .right-skill {
-        right: 350px;  
-      }
+    .skills {
+      flex-direction: column; /* Align skills vertically on very small screens */
+      align-items: center; /* Center skills */
+    }
   
-
-      .skill:hover {
-        transform: scale(1.2);
-      }
-
-      .skill i {
-        font-size: 2rem;
-   
-      }
-      .skill p {
-        margin: 0;
-        font-size: 1rem;
-      }
+    .skill {
+      width: 80px; /* Smaller size for small screens */
+      height: 80px;
+      margin: 10px; /* Reduced margin for smaller screens */
+    }
+  
+    .skill i {
+      font-size: 1.5rem; /* Smaller icons */
+    }
+  
+    .skill p {
+      font-size: 0.8rem; /* Smaller text */
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) { /* Styles for medium devices */
+    .skill {
+      width: 100px; /* Adjust size for medium screens */
+      height: 100px;
+    }
+  }
   
   
-      @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-          transform: translateY(0);
-        }
-        40% {
-          transform: translateY(-15px);
-        }
-        60% {
-          transform: translateY(-10px);
-        }
-      }
-
-      .skill i {
-        animation: bounce 2s infinite;
-      }
-
-      .sk1{
-        top: 3%;
-        text-align: center;
-        position: absolute;
-        text-decoration: none;
-      }
+  
+  
+  
+  
 
 
       /* contact */
