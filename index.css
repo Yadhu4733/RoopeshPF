@@ -851,7 +851,20 @@
 .km-description {
   text-align: justify;
 }
+@media (max-width: 767px) {
+  .km-content {
+    font-size: 0.9rem; /* Reduce text size */
+    padding: 10px;     /* Adjust padding if necessary */
+  }
 
+  .km-description {
+    font-size: 0.85rem; /* Adjust description text size */
+  }
+
+  .km-content h2 {
+    font-size: 1.1rem; /* Reduce heading size */
+  }
+}
 
 
 
@@ -1348,6 +1361,8 @@ h1 {
   z-index: 3; 
   font-size: 1.5em; 
   animation: fadeInOut 3s ease-in-out infinite; 
+  color: rgb(255, 238, 1);
+  text-shadow: 5px 5px 5px black;
 }
 
 
