@@ -100,6 +100,13 @@
   color: white; 
 }
 
+@media (max-width: 480px) {
+  .overlay-text {
+    top: 60%;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
 .overlay-text p {
   font-size: 1.5rem;
 }
@@ -117,6 +124,14 @@
   animation: fadeInMoveUp 3s ease forwards; /* Initial animation */
   animation-iteration-count: infinite; /* Loop the animation */
   animation-direction: alternate; /* Reverse on alternate iterations */
+}
+
+@media (max-width: 480px) {
+  .texts {
+    color: yellow;
+    text-shadow: 5px 5px 5px black;
+    
+  }
 }
 
 @keyframes fadeInMoveUp {
