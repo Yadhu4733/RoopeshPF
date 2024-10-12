@@ -417,22 +417,23 @@
   align-items: center;
   left: 25%;
   font-size: 35px;
+  color: black;
   text-decoration: none;
   color: black;
 }
 @media (max-width: 480px) {
   .mmp {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
-    padding: 5px;
+    /* padding: 5px; */
     left: 10%;
   }
 }
 @media (max-width: 768px) {
   .mmp {
-    font-size: 20px;
+    font-size: 24px;
    
-    padding: 8px;
+   
 left: 5%;
   }
 }
@@ -440,13 +441,21 @@ left: 5%;
 
 @media (min-width: 600px) and (max-width: 1024px) {
   .mmp {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     max-width: 90%;
     padding: 8px;
   }
 }
 
+
+
+.mmmp{
+  text-decoration: none;
+  font-size: 25px;
+  position: relative;
+  color: black;
+}
 
 
 
@@ -526,7 +535,7 @@ left: 5%;
 
 
   .abt4 {
-    font-size: 24px;         
+    font-size: 20px;         
     line-height: 1.6;         
     max-width: 100%;         
     margin: 0 auto;          
@@ -534,6 +543,7 @@ left: 5%;
     box-sizing: border-box;   
     word-wrap: break-word;    
     margin-top: 15px;
+    text-align: justify;
   }
 
 
@@ -541,7 +551,7 @@ left: 5%;
 
   @media (min-width: 600px) and (max-width: 1024px) {
     .abt4 {
-      font-size: 1.15em;      
+      font-size: 20px;      
       line-height: 1.5;      
       max-width: 90%;         
       padding: 8px;          
@@ -560,7 +570,7 @@ left: 5%;
  
   @media (max-width: 480px) {
     .abt4 {
-      font-size: 14px;        
+      font-size: 12px;        
       line-height: 1.4;      
       padding: 5px;          
     }
@@ -576,7 +586,7 @@ left: 5%;
 
   @media (min-width: 1200px) {
     .abt4 {
-      font-size: 28px;       
+      font-size: 24px;       
       line-height: 1.8;       
  
       padding: 15px;         
