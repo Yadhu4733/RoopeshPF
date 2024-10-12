@@ -1443,9 +1443,20 @@ h1 {
 
 
 
+.anm{
+  text-decoration: none;
+  font-size: 270%;
+  position: relative;
+  color: black;
+  /* left: 40%; */
+  text-decoration-line: underline;
+}
 
-
-
+.anm1{
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
 
 
