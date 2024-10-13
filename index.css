@@ -846,7 +846,7 @@ left: 5%;
   z-index: 1;
 }
 
-.km1, .km2, .km3, .km4, .km5, .km6 {
+.km1, .km2, .km3, .km4, .km5, .km6, .km10 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -856,6 +856,12 @@ left: 5%;
   position: relative;
   overflow: hidden;
 }
+
+
+
+
+
+
 
 .km1:before, .km1:after, .km2:before, .km2:after,
 .km3:before, .km3:after, .km4:before, .km4:after,
@@ -876,7 +882,7 @@ left: 5%;
 
 .km1:hover:before, .km1:hover:after, .km2:hover:before, .km2:hover:after,
 .km3:hover:before, .km3:hover:after, .km4:hover:before, .km4:hover:after,
-.km5:hover:before, .km5:hover:after, .km6:hover:before, .km6:hover:after {
+.km5:hover:before, .km5:hover:after, .km6:hover:before, .km6:hover:after, .km10:hover:before, .km10:hover:after {
   opacity: 1;
   animation: none; 
 }
@@ -894,9 +900,6 @@ left: 5%;
 }
 
 @media (min-width: 992px) {
-  .km1:hover, .km2:hover, .km3:hover, .km4:hover, .km5:hover, .km6:hover {
-      transform: scale(1.1);
-  }
 
   .km-content:hover {
       transform: scale(1.05);

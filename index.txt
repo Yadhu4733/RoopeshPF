@@ -109,52 +109,10 @@ Personal Profile
 
 
 
+Expanding Expertise in High-Tension (HT) Electrical Systems
 
-
-
-
-
-<section id="contact">
-  <div class="contact-container">
-    <h1>Contact Me</h1>
-    <div class="contact-info">
-      <p>Email: <strong>roopeshpathalil.com</strong></p>
-      <p>Phone: <strong>+91-9747659065</strong></p>
-      <p>Location: <strong>Kochi, INDIA</strong></p>
-    </div>
-
-    <!-- Contact form -->
-    <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-
-    <!-- Social media icons -->
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+After embracing a spiritual path, 
+Roopesh Pathalil dedicated himself to enhancing his electrical knowledge, particularly in high-tension (HT) systems. He worked for one year with SP Engineers, an HT Electrical Contractor in Muvattupuzha, contributing to approximately 10 power houses and substations. This hands-on experience allowed him to deepen his expertise in complex HT installations and maintenance, significantly boosting his confidence and technical proficiency in high-voltage electrical infrastructure.
 
 
 
