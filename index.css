@@ -79,6 +79,9 @@
 }
 
 
+
+
+
 .p12{
     margin-left: 10px;
 }
@@ -641,194 +644,6 @@ left: 5%;
 
 
 
-
-
-
-
-
-
-
-
-/* about02 */
-/* 
-.hover-col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-  height: 50vh; 
-  border: 4px solid transparent; 
-  position: relative;
-  overflow: hidden;
-}
-
-
-.hover-col:before, .hover-col:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  transition: all 0.5s ease;
-  ; 
-  background-size: 200% 200%;
-  animation: gradientShift 3s ease infinite;
-  border-radius: 5px;
-  opacity: 0;
-}
-
-.hover-col:hover:before, .hover-col:hover:after {
-  opacity: 1;
-  animation: none; 
-}
-
-
-.hover-col .content {
-  z-index: 1; 
-  padding: 20px;
-  text-align: center;
-  font-size: 1.2rem;
-  color: #333;
-  background-color: #ff4e50, #f9d423;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-
-@media (min-width: 992px) {
-  .hover-col:hover {
-      transform: scale(1.1);
-  }
-
-  .hover-col .content:hover {
-      transform: scale(1.05);
-  }
-}
-
-
-
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-.asw{
-  
-  left: 45%;
-  
-  text-align: center;
-  position: absolute;
-  text-decoration: none;
-
-}
-
-
-.abt002{
-  margin-top: 15%;
-}
-
-
-
-
-
-.qwe {
-  
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.qwe::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('./asset/IMG_3062.JPG'); 
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;
-}
-
-.qwe::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 15px; 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 100%);
-  backdrop-filter: blur(10px); 
-  z-index: 0; 
-}
-
-
-
-.ab0021{
-  text-align: justify;
-}
-
-.underline-animation {
-  position: relative; 
-  display: inline-block; 
-  color: #333; 
-}
-
-.underline-animation::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0; 
-  width: 100%; 
-  height: 2px; 
-  background-color: #ff0000;
-  transform: scaleX(0); 
-  transition: transform 0.3s ease;
-}
-
-.underline-animation:hover::after {
-  transform: scaleX(1); 
-}
-
-.quicksand {
-  font-family: "Quicksand", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-} */
-
-
-
-
-
-
-
-
-
-
-
-/* ABOUT */
-/* .km-body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: url('./asset/IMG_3062.JPG') no-repeat center center scroll;
-  background-size: cover;
-}
- */
-
-
-
-
-
 .km-body::before {
   content: "";
   position: absolute;
@@ -924,6 +739,7 @@ left: 5%;
 }
 .km-description {
   text-align: justify;
+  font-size: 16px;
 }
 @media (max-width: 767px) {
   .km-content {
@@ -1487,7 +1303,10 @@ h1 {
 
 
 
+.l11{
+  color: rgb(35, 35, 35);
 
+}
 
 
 
